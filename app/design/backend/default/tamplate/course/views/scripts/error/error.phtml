@@ -1,0 +1,39 @@
+<div class="mainbar"> 
+
+    
+    <table cellspacing="0" id="UserNameandPasswordtb"  class="lefttable">
+       <tr  >
+    <td bgcolor="#D8DFEA" class="fbtab" height="21" width="98%" colspan="3"  ><a href="#">+ An error occurred</a></td>
+       </tr>
+    </table>
+            
+    <div id="UserNameandPassworddv">
+                  <table cellspacing="0"  class="lefttable">
+                    <tr>
+                    <td>
+                        <h2><?php echo $this->message ?></h2>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td> 
+  <?php if (isset($this->exception)): ?>
+  
+  <h3>Exception information:</h3>
+  <p>
+      <b>Message:</b> <?php echo $this->exception->getMessage() ?>
+  </p>
+
+  <h3>Stack trace:</h3>
+  <pre style="width: 100%"><?php echo $this->exception->getTraceAsString() ?>
+  </pre>
+
+  <h3>Request Parameters:</h3>
+  <pre style="width: 100%"><?php echo $this->escape(var_export($this->request->getParams(), true)) ?>
+  </pre>
+
+  <?php endif ?>
+ </td>
+   </tr>
+                </table>
+</div>
+</div>

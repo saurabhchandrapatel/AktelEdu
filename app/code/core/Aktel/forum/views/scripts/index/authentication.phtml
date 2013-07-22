@@ -1,0 +1,75 @@
+<div class="content">
+          <div class="content_resize">
+          <div class="mainbar"> 
+        <div id="Containt" class="containt" align="center">
+    <?php  $this->ftable('New Request', 'newusertb', 1);   ?>         
+               
+                
+          <div id="newuserdivv">
+              <table cellspacing="0"  class="fbtable">
+                    <tr><td>
+                  
+                        <?php echo $this->new_request; ?> 
+                        
+                   </td>
+                    </tr>
+
+                </table>                
+           </div>
+
+
+         <?php 
+         
+          $this->slideToggle('newusertb','newuserdivv', 1);
+          
+          if($this->getusertype==2){ 
+             
+             $this->ftable("Instructor", "instructorstb",1);
+          ?> 
+            <div id="instructors" >
+
+                <table cellspacing="0"  class="fbtable">
+                            <tr>
+                             <td> 
+                       <?php  echo $this->Instructor; ?> 
+                             </td></tr>
+                </table>
+            </div>
+            <?php 
+            $this->slideToggle("instructorstb", "instructors", 1);
+            
+            $this->ftable("Student", 'studentstb', 1);
+
+            ?>
+
+            <div id="studentsdv" >
+                <table class="fbtable"  cellspacing="0"  >
+                    <tr>
+                        <td>
+
+                                <?php echo $this->student; ?>   
+
+                        </td>
+                    </tr>
+                </table>
+            </div> 
+          <?php  $this->slideToggle("studentstb","studentsdv", 1);
+         } else {   
+             
+             $this->ftable("Client","Clienttb", 1);  ?>
+          <div id="Client" >
+          <table class="fbtable"  cellspacing="0"  >
+              <tr>
+                  <td>
+                    <?php echo $this->Client; ?>
+                  </td>
+              </tr>
+                </table>
+            </div> 
+             
+       <?php  $this->slideToggle("Clienttb","Client", 1); } ?> 
+          
+        </div>
+          </div>
+          </div>
+ </div>

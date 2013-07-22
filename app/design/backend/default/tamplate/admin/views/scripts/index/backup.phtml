@@ -1,0 +1,44 @@
+<div class="administrator_head"><a href="#" class="active">+ Create Database Back Up</a></div>
+
+		   <div id="database_backup" >
+          <?php  echo $this->exportdatabaseForm;?>
+          </div> 
+                                 
+                                 
+<div class="administrator_head"><a href="#" class="active">+ Restore Data</a></div>
+
+  <div id="database_backup" >
+              
+               <div id="file-uploader">		
+					<noscript>			
+						<p>Please enable JavaScript to use file uploader.</p>
+						<!-- or put a simple form for upload here -->
+					</noscript>         
+		       </div>                
+                                                                  
+<?php //echo $this->UploadBackupZipFile; ?>                                      
+<small style="font-weight: bold; font-style:italic; margin-left: 10%">Supported File Types:zip only . original Backup File.</small>
+  </div> 
+                          
+                          
+ <div class="administrator_head"><a href="#" class="active">+ Course Back Up</a></div>
+<?php  echo $this->CourseBackUp; ?>  
+
+
+
+<script>       
+<?php $x=rand(); ?>
+        function createUploader(){            
+            var uploader = new qq.FileUploader({
+                element: document.getElementById('file-uploader1'),
+                action: '<?php echo $this->baseUrl();?>/utility/uploder/uploader.php',
+                params: {  folder: '<?php echo "course/".$x; ?>'},
+                debug: true
+            });           
+        }
+        
+        // in your app create uploader as soon as the DOM is ready
+        // don't wait for the window to load  
+        window.onload = createUploader;     
+</script> 
+

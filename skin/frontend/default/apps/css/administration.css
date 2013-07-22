@@ -1,0 +1,72 @@
+@CHARSET "ISO-8859-1";
+.administrator_content { width: 98% ;padding: 1%;}
+.administrator_content .administrator_sidebar { float: left; width: 260px; margin-left: 35px;}
+.administrator_content .administrator_sidebar .administrator_sidebar_content { width: 317px; }
+.administrator_content .administrator_sidebar .administrator_sidebar_content .administrator_tab { background-color :#414141;  width:235px; height:34px; margin: 5px;  font-weight: bold;  }
+.administrator_content .administrator_sidebar .administrator_sidebar_content .administrator_tab a { display: block; margin: 0; padding: 7px 11px; color: #7D7D7D; text-decoration: none; font-size: 13px; font-weight: bold;}
+.administrator_content .administrator_sidebar .administrator_sidebar_content .administrator_tab a:hover { padding: 7px 11px; color:#fff; background-color:#232323;}
+.administrator_content .administrator_sidebar .administrator_sidebar_content .administrator_tab a .active { padding: 7px 11px; color:#fff; background-color:#232323;}
+.administrator_content .administrator_content_resize { float:left; width:935px; padding: 2px;}
+.administrator_content .administrator_head { 	background-color:#414141;	height: 34px;	width: 930px;	margin-top: 3px; margin-bottom: 17px; }
+.administrator_content .administrator_head  a { padding: 7px 11px;  display: block; height: 19px;	width: 908px; color: #7D7D7D; text-decoration: none; font-size: 13px; font-weight: bold;}
+.administrator_content .administrator_head  a:hover { padding: 7px 11px;  color:#fff; background-color: #232323;}
+.administrator_content .administrator_head a .active { padding: 7px 11px;  color:#fff; background-color: #232323;}
+/******* FORM *******/
+.administrator_content .customForm{	padding: 0 10px 10px;}
+.administrator_content .customForm label{	display: block;	color: #797979;	font-weight: 700;	line-height: 1.4em; padding-bottom:7px;}
+.administrator_content .customForm input{	width: 420px;	padding: 6px;	color: #949494;	font-family: Arial,  Verdana, Helvetica, sans-serif;	font-size: 11px;	border: 1px solid #cecece;}
+.administrator_content .customForm input:FOCUS {	width: 420px;	padding: 6px;	color: #949494;	font-family: Arial,  Verdana, Helvetica, sans-serif;	font-size: 11px;	border: 1px solid #cecece;}
+.administrator_content .customForm input[type="submit"] {	cursor: pointer; width: 120px;	padding: 6px;	color: #949494;	font-family: Arial,  Verdana, Helvetica, sans-serif;	font-size: 11px;	border: 1px solid #cecece;}
+.administrator_content .customForm input[type="submit"]:HOVER {cursor: pointer; width: 120px;	padding: 6px;	color: #946794;	font-family: Arial,  Verdana, Helvetica, sans-serif;	font-size: 11px;	border: 1px solid #3d6519;}
+.administrator_content .customForm select { width: 420px;	padding: 6px;	color: #949494;	font-family: Arial,  Verdana, Helvetica, sans-serif;	font-size: 11px;	border: 1px solid #cecece;}
+.administrator_content .customForm input.error{	background: #f8dbdb;	border-color: #e77776;}
+.administrator_content .customForm textarea { margin: 2px; width: 418px; height: 97px;  }
+.administrator_content .customForm textarea.error{	background: #f8dbdb;	border-color: #e77776;}
+.administrator_content .customForm div{	margin-bottom: 15px;}
+.administrator_content .customForm div span1{	margin-left: 10px;	color: #b1b1b1;	font-size: 11px;	font-style: italic;}
+.administrator_content .customForm div .sack{ margin-left: 10px;	color: #b1b1b1;	font-size: 11px;	font-style: italic; }
+.administrator_content .customForm div span.error{	color: #e46c6e;}
+.administrator_content .customForm select span.error{	color: #e46c6e;}
+.administrator_content .customForm #send{	background: #6f9ff1;	color: #fff;	font-weight: 700;	font-style: normal;	border: 0;	cursor: pointer;}
+.administrator_content .customForm #send:hover{	background: #79a7f1;}
+.administrator_content .error {font-size: 11px;width: 420px; margin-left:5px; color:red; }
+.administrator_content .sucess {font-size: 11px; width: 420px; margin-left:5px; color:green; } 
+.administrator_content .error ul{	list-style: square;	padding: 5px;	font-size: 11px;}
+.administrator_content .error ul li{	list-style-position: inside;	line-height: 1.6em; }
+.administrator_content .error ul li strong{	color: #e46c6d;}
+.administrator_content .error.valid ul li strong{	color: #93d72e;}
+.administrator_content .report1{ float: left;margin-right: 3px;}
+.administrator_content .request{ background-color:#ebebeb;width: 930px;margin-top: -17px;min-height: 138px;}
+.administrator_content .change_pass {}
+.administrator_content .btn_1 { float: left; margin-right: 5px;}
+.administrator_content .btn_2 { float: left; margin-right: 5px;}
+
+
+
+
+/******* FORM *******/
+
+.administrator_content .administrator_content_resize .resourse_center { height: 375px; width: 266px; overflow-y: scroll; overflow-x: hidden; float: right;}
+.administrator_content .administrator_content_resize .resourse_center .tab { background-color:#F1F1F1; width:250px; margin-bottom: 10px; height: 30px; } 
+.administrator_content .administrator_content_resize .resourse_center .tab .tab_img { float: left;  }
+.administrator_content .administrator_content_resize .resourse_center .tab img { width: 30px; height: 30px; }
+.administrator_content .administrator_content_resize .resourse_center .tab .text {  }
+.administrator_content .administrator_content_resize .resourse_center .tab .text a {  padding: 7px 11px; display: block;	color: #797979;	font-weight: 700;	line-height: 1.4em; padding-bottom:7px; text-decoration: none; margin-left: 30px;}
+
+.administrator_content .administrator_content_resize .administrator_discription { background-color:#F1F1F1; height: 375px; width: 655px; }
+.administrator_content  .club { width: 99%; height: 450px; }
+.administrator_content  .club .row{ height: 126px; padding-top: 5px;}
+.administrator_content  .club .row .col{ width:9%; padding-left: 1%; list-style: none; float: left;}
+.administrator_content  .club .row .col img { width:99%; border-color: black; border-width: 1px;}
+ 
+
+
+
+
+
+
+
+
+
+
+

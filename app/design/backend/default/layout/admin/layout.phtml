@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <title>index</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <meta name="viewport" content="width=device-width" />               
+                <?php echo $this->headLink(); ?>
+                <?php echo $this->headScript(); ?>
+                <?php  echo '<script type="text/javascript" src="'.$this->baseUrl().'/js/sack.Js"></script>'; ?>
+             	<link rel="stylesheet" href="/skin/frontend/default/apps1/css/screen.css" type="text/css" media="screen" title="default" />
+				<!--[if IE]>
+				<link rel="stylesheet" media="all" type="text/css" href="/skin/frontend/default/apps1/css/pro_dropline_ie.css" />
+				<![endif]-->
+				<?php echo $this->navigation()->links();
+
+				
+	 ?>
+				
+  </head>
+            <body>
+                 <div class="main">
+                <div class="header">
+                    <div class="header_resize">
+                            <div class="logo">
+                                <h1><a href="/"><span>Aktel</span> LMS Portal <small>end less Energy,Infinite Possibilites </small></a></h1>
+                            </div>
+                            <?php   //echo $this->navigation()->menu(); ?>
+                           
+                      <div class="menu_nav">
+                         <ul> <?php   echo $this->menuHelper(); ?>
+ 						                
+                        </ul>
+                    </div>
+                 
+                    <div class="clr"></div>
+                </div>
+              </div> 
+                <!-- end menu -->
+                <div class="administrator_content">
+                    <div class="administrator_sidebar">
+ 						         <?php echo $this->render('admin/sidebar.phtml');?>
+                   </div>
+                   <div class="administrator_content_resize">
+                         <?php echo $this->layout()->content; ?>
+                   </div>  
+                  
+               </div>  
+			</div>  
+	     <div class="footer"></div>
+        
+        </body>
+        </html>
+
+    
+ 

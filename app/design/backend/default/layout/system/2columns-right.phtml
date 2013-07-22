@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <title>index</title>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <meta name="viewport" content="width=device-width" />               
+                <?php echo $this->headLink(); ?>
+                <?php echo $this->headScript(); ?>
+                
+                <?php  echo '<script type="text/javascript" src="'.$this->baseUrl().'/Utility/videoplayer/flowplayer-3.2.2.min.js"></script>'; ?>
+                <?php  echo '<script type="text/javascript" Src="'.$this->baseUrl().'/js/cufon-yui.js"></script>'; ?>
+                <?php  echo ' <script type="text/javascript" Src="'.$this->baseUrl().'/js/droid_sans_400-droid_sans_700.font.js"></script>'; ?>
+                <?php  echo '<script type="text/javascript" Src="'.$this->baseUrl().'/js/cuf_run.js"></script> '; ?>
+                <?php  echo '<script type="text/javascript" Src="'.$this->baseUrl().'/js/radius.js"></script>'; ?>
+                <?php  echo '<script type="text/javascript" src="'.$this->baseUrl().'/js/sack.Js"></script>'; ?>
+                <?php  echo ' <script type="text/javascript" src="'.$this->baseUrl().'/Utility/videoplayer/flowplayer-3.2.2.min.js"></script> '; ?>
+
+                  
+    
+            <script language="javascript" type="text/javascript">  
+                            $(function(){ 
+                                $('#Date').datepicker({
+                                                    inline: true
+                                            });
+                        });
+
+            </script>        
+
+            </head>
+            <body>
+                 <div class="main">
+                <div class="header">
+                    <div class="header_resize">
+                            <div class="logo">
+                                <h1><a href="/"><span>Aktel</span> LMS Portal <small>end less Energy,Infinite Possibilites </small></a></h1>
+                            </div>
+                    <div class="menu_nav"><ul>
+
+
+                            <li><a href="<?php echo $this->baseUrl() ?>/">Home</a>
+                            </li>
+                            <li><a href="<?php echo $this->baseUrl() ?>/index/registration">Registration</a></li>
+                            <li><a href="<?php echo $this->baseUrl() ?>/index/search">Course</a></li>
+                            <li><a href="http://www.sack.com/sack_portal/sack_template/maintemplate/pdf/sack%20About%20Us1.pdf?94a08da1fecbb6e8b46990538c7b50b2=6ed1740eba8b981b23dfe4fe65eed51a">White Papers</a></li>
+                            <li><a href="<?php echo $this->baseUrl() ?>/index/about/">About Aktel</a></li>
+                            <li><a href="<?php echo $this->baseUrl() ?>/index/aboutus">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="clr"></div>
+               
+                    </div>
+                </div> 
+                                    <style>
+
+                                    div#banner {
+                                        clear:both;
+                                    display:block;
+                                    margin-left:170px;
+                                    margin-top: 20px;
+                                    width: 950px;
+                                    position:relative;
+                                    }
+                                    div#banner a.nav-banner-link {
+                                        padding:0px;
+                                    }
+                                    div#banner a.nav-banner-link:hover {
+                                        border-bottom-width:0px;
+                                    }
+                                    .tastymony {
+                                    padding: 8px;
+                                    color: #868686;
+                                    font-size: 11px;
+                                    }
+                                    .studentcorner {
+                                    background: url(student_corner.png) right no-repeat;
+                                    background-position: 175px;
+                                    }
+
+                                    </style>  
+                                    <div id="banner">
+                                        <?php echo $this->render('banner.phtml');?>
+                                    </div>
+                                    <div class="content">
+                                            <div class="content_resize">
+                                            
+
+                                                <?php echo $this->layout()->content; ?>
+                                   
+                                   <div class="sidebar">
+
+                                              <?php echo $this->render('sidebar.phtml');?>
+                                   </div>
+                                        <div class="clr"></div>
+                                    </div>
+                                 </div>
+
+                     <div class="fbg">
+                      
+                
+               <?php echo $this->render('footer.phtml');?>
+                     </div>
+        <div class="footer">
+            <div class="footer_resize">
+                <p class="lf"> &copy; Copyright <a href="#"> sack-ready Solution Pvt Ltd</a>. </p>
+                <div class="clr"></div>
+            </div>
+        </div>
+        </div>  
+        <script type="text/javascript">
+            (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=159312660798823";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        </body>
+        </html>
+
+    
+ 

@@ -1,0 +1,53 @@
+Refrence to Magento But Technology is Zend
+
+Note:
+
+#######################################################################	
+
+Module List:
+
+/////////////////////////////////////
+
+Core Module List
+
+////////////////////////////////////
+			## user  
+			## Admin
+			## Blog
+			## Chat
+			## Club
+			## Comment
+			## Course
+			## Exam
+			## Forum
+			## Institute
+			## News
+			## Polls
+			## QuestionBank
+			## Search
+			## Student
+			## System
+			## User
+			
+			
+			
+	0:opne Login system
+	  
+			## user enter email id in email testbox;
+	 
+	1:Admin
+	2:Corporate
+		1:admin----Role
+		2:Head-----Role
+		3:instructor---Role
+		4:author---Role
+		5:Student
+	3:course
+	4:club
+	5:chat
+	6:exam;
+	7:book;
+	
+	
+#######################################################################	
+	

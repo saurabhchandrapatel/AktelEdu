@@ -1,0 +1,34 @@
+ 
+<div class="content">
+        <div class="content_resize">
+          <div class="mainbar"> 
+            <div id="Containt" class="containt"  align="center" >
+         <?php   $this->ftable('Change Password   ', 'ChangePasswordtb',1);    ?>
+            <div id="ChangePassworddv" >
+               <table cellspacing="0"  class="fbtable">
+                <tr>
+                <td>
+                  <?php echo $this->changepassword; ?>                                 
+                </td>
+               </tr>
+               </table>   
+              </div>
+             <?php  
+             $this->slideToggle('ChangePasswordtb','ChangePassworddv',1);
+             $this->ftable('Edit Profile', 'EditProfiletb',1);   
+             $this->slideToggle('EditProfiletb','EditProfiledv',1);
+                ?>
+            <div id="EditProfiledv" style="display: none">
+                 <table cellspacing="0"  class="fbtable">
+                       <tr> <td>
+                            <?php echo $this->Form_My_profile;?>
+                 </td></tr>
+             </table>
+
+              </div>
+              
+        </div>
+          </div>
+        </div></div>
+  
+

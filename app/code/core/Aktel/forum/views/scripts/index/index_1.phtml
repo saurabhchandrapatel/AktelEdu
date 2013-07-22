@@ -1,0 +1,79 @@
+<div class="content">
+        <div class="content_resize">
+          <div class="mainbar"> 
+    <div id="Containt" class="containt" align="center"> 
+        <?php $this->ftable(" Right Now","RightNowtb", 1); ?> 
+     <div id="AdminNotificationdiv" >
+       
+            <table cellspacing="0"  class="fbtable">
+                    <tr>
+                    <td>
+                      <?php echo $this->rightnow; ?> 
+                    </td>
+                    </tr>
+            </table>
+     </div>
+   <?php $this->ftable(" Dashboard","Dashboardtb", 1); ?> 
+    <div id="Dashboarddv">
+        <table width="464" height="77" border="0" cellpadding="5" cellspacing="5" >
+            <tr >
+                        <td width="71" ><a href="#" ><img src="../images/icon/home.png" alt="" width="51" height="53"  onmouseover='show_large_image(this,"HM1")'/></a></td>
+                        <a href="#"><img id="HM1" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+                        <td width="51" ><a href="#" ><img src="../images/club.png" alt="" width="51" height="53" onmouseover='show_large_image(this,"CLB1")'/></a></td>
+                        <a href="#"><img id="CLB1" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+                        <td width="131" ><a href="#" ><img src="../images/icon/emblem_library.png" alt="" width="51" height="53" onmouseover='show_large_image(this,"CS1")'/></a></td>
+                        <a href="#"><img id="CS1" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+                        <td width="131" ><a href="#" ><img src="../images/icon/Calendar.png" alt="" width="51" height="53" onmouseover='show_large_image(this,"1")'/></a></td>
+                        <td width="51"  ><a href="#" ><img src="../images/icon/user.png" alt="" width="51" height="53" onmouseover='show_large_image(this,"Auth1")'/></a></td>
+                         <a href="#"><img id="Auth1" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+                        <td width="51"  ><a href="#" ><img src="../images/icon/db_update.PNG" alt="" width="51" height="53" onmouseover='show_large_image(this,"db1")'/></a>
+                         <a href="#"><img id="db1" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+                        
+                        </td>
+                      
+            </tr>
+             <tr align="center">
+                        <td width="51" ><a href="<?php echo "index.php?".md5('token')."=".md5('Home'); ?>" >Home</a></td>
+                        <td width="51" ><a href="<?php echo "index.php?".md5('token')."=".md5('ClubHome'); ?>" >Club</a></td>
+                        <td width="131" ><a href="<?php echo "index.php?".md5('token')."=".md5('course'); ?>" >Course </a></td>
+                        <td width="131" ><a href="#" >Calender</a></td>
+                        <td width="51"  ><a href="<?php echo "index.php?".md5('token')."=".md5('Authentication') ; ?>" >User Authentication</a></td>
+                        <td width="51"  ><a href="<?php echo "index.php?".md5('token')."=".md5('BackUp') ; ?>" >Back Up</a>
+                        </td>
+                      
+            </tr>
+            <tr >      
+                       <td width="51" ><a href="#" ><img src="../images/icon/Addclub.gif" alt="" width="51" height="53" onmouseover='show_large_image(this,"AddCLB1")'/></a></td>
+                        <a href="#"><img id="AddCLB1" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+                        <td width="131" ><a href="#" ><img src="../images/icon/Addcourse.gif" alt="" width="51" height="53" onmouseover='show_large_image(this,"ACS1")'/></a></td>
+                        <a href="#"><img id="ACS1" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+                        <td width="51"  ><a href="#" ><img src="../images/icon/Adduser.gif" alt="" width="51" height="53" onmouseover='show_large_image(this,"AddUser1")'/></a></td>
+                        <a href="#"><img id="AddUser1" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+                        <td width="51" ><a href="#" ><img src="../images/icon/Addknewsletter.gif" alt="" width="51" height="53" onmouseover='show_large_image(this,"Addnews")'/></a></td>
+                        <a href="#"><img id="Addnews" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+                        <td width="51" ><a href="#" ><img src="../images/icon/Addpolls.gif" alt="" width="51" height="53" onmouseover='show_large_image(this,"AddPolls")'/></a></td>
+                         <a href="#"><img id="AddPolls" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+            </tr>
+             <tr align="Center" >      
+                        <td width="51" ><a href="#" >Create New Club</a></td>
+                        <td width="131" ><a href="#" >Create New Course</a></td>
+                        <td width="51"  ><a href="#" >Add New User</a></td>
+                        <td width="51"  ><a href="#" >Add News</a></td>
+                        <td width="51"  ><a href="#" >Add Polls</a></td>
+            
+                      
+            </tr>
+   </table>
+    </div>
+        
+        <a href="#"><img id="1" src=""  width="52" height="54" style="position:absolute;display:none;" onmouseout="hide_large_image(this)" /></a>
+
+ 
+        
+        <?php 
+        $this->slideToggle("Dashboardtb", "Dashboarddv", 1);
+         $this->slideToggle("Dashboardtb", "Dashboarddv", 1);
+        ?>
+     </div>
+    </div>
+        </div></div>

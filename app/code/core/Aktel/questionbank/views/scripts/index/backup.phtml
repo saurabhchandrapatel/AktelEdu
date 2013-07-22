@@ -1,0 +1,73 @@
+<div class="content">
+        <div class="content_resize">
+          <div class="mainbar">  
+            <div id="Containt" class="containt" align="center">
+
+            <?php 
+                    if($this->getusertype=='1'){
+                       $this->slideToggle("left_coltab","left_col",1);        
+                       $this->ftable("Create Database Back Up","left_coltab", 1);
+            ?> 
+            <div id="left_col">
+                <table cellspacing="0" class="fbtable">
+                    <tr>
+                        <td>   <div id="left_col" >
+                                    <fieldset>
+                                        <legend>Export Database</legend>
+                                          <?php echo $this->exportdatabaseForm;?>
+                                         <div id="upload_area" align="right"></div>
+                                    </fieldset>
+                                    <small style="font-weight: bold; font-style:italic; margin-left: 10%">Supported File Types:zip only . original Backup File. not more than 100mb.</small>
+                                 </div> 
+                        </td>
+                    </tr>
+                </table>
+             </div>  
+        <?PHP   }else { 
+
+             $this->slideToggle("left_coltab","left_col",1);        
+             $this->ftable("Restore Data","left_coltab", 1);
+            ?> 
+            <div id="left_col">
+                <table cellspacing="0" class="fbtable">
+                    <tr>
+                        <td>
+                           <div id="left_col" >
+                                <fieldset>
+                                     <legend>Upload Backup Zip File</legend>
+                                       
+                                     <?php echo $this->UploadBackupZipFile; ?>                                      
+                                     
+                                 <div id="upload_area" align="right"></div>
+                               </fieldset>
+                            <small style="font-weight: bold; font-style:italic; margin-left: 10%">Supported File Types:zip only . original Backup File.</small>
+                          </div>   
+                       </td>
+                </tr>
+                </table>
+            </div>        
+            <?php 
+             $this->slideToggle("left_coltab","left_col",1);        
+             $this->ftable("Course Back Up","Backuptab", 1);
+            ?>        
+            <div id="Backup">
+                  <table cellspacing="0"  class="fbtable">
+                    <tr>
+                     <td>
+                    
+                            <?php  echo $this->CourseBackUp; ?>  
+                    </td>
+                    </tr>
+
+                </table>
+                </div>
+
+
+            <?php 
+                            
+             $this->slideToggle("Backuptab","Backup",1);
+
+             } ?>
+        </div>
+          </div>
+        </div></div>

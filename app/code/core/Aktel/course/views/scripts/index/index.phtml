@@ -1,0 +1,284 @@
+<div class="course_head"><a href="#" class="active">+ Add New Course</a></div>
+
+<!-- add_course_details -->
+
+<div class="add_course_details" style="display: none;">
+<form name="user" action="#" method="post" class="customForm">
+		
+              <div>
+				<label for="name">Select Cource Cotegry</label>
+				<select name="type" id="type" onchange="changeaction(this.value)" class="formfield">
+                                      <option value="0">select</option>
+                                      <option value="2">Administrator</option>
+                                      <option value="3">Instructor</option>
+                                      <option value="4">Student</option>
+                                      <option value="5">Other</option>
+                </select>
+              <!-- <div class="error"><span style="font-size: 11px;" >You Can Choose this <b>U<b>ser name  !</b></b></span></div>-->
+				 
+			</div> 
+            <div>
+				<label for="name">Cource Name</label>
+				  <input name="username" class="formfield" type="text" id="username" onchange="checkuser(this.value);">
+                  <input name="status" type="hidden" value="NO" id="status"> 
+				<!--   <div class="sucess">You Can Choose this user name  !</b></div>-->
+			</div>
+			<div>
+				<label for="pass1">Short Discription</label>
+				 <textarea rows="" cols=""></textarea>				
+			</div>
+			
+             <div>
+				<label for="pass1">Discription</label>
+				 <textarea rows="" cols=""></textarea>				
+			</div>
+			<div>
+				<label for="pass2">Date</label>
+				<input name="cpassword" class="formfield" type="password" id="pass2">				
+			</div>
+                     
+              <div>
+                  <input type="submit" name="Submit" value="   Next   " class="fb_button">  
+			</div>
+</form>
+</div>                
+                
+<!-- Add Content -->
+
+<div class="add_content" style="display: none;" >
+<form name="user" action="#" method="post" class="customForm" style="display: none;">
+		
+              <div>
+				<label for="name">Select Content Type</label>
+				<select name="type" id="type" onchange="changeaction(this.value)" class="formfield">                                      
+                                      <option value="Text">Text</option>
+                                      <option value="HTML">HTML</option>
+                                      <option value="PDF">PDF</option>
+                                      <option value="Vedio">Vedio</option>
+                                      <option value="Audio">Audio</option>
+                                      <option value="Image">Image</option>
+                </select>
+              <!-- <div class="error"><span style="font-size: 11px;" >You Can Choose this <b>U<b>ser name  !</b></b></span></div>-->
+				 
+			</div> 
+            <div>
+				<label for="name">Content Title</label>
+				  <input name="username" class="formfield" type="text" id="username" onchange="checkuser(this.value);">
+                  <input name="status" type="hidden" value="NO" id="status"> 
+				<!--   <div class="sucess">You Can Choose this user name  !</b></div>-->
+			</div>
+			<div>
+				<label for="pass1">Content</label>
+				 <textarea rows="" cols=""></textarea>				
+			</div>
+            <div>
+				<label for="name">Publishing options</label>
+				<select name="type" id="type" onchange="changeaction(this.value)" class="formfield">                                      
+                                      <option value="Published">Published</option>
+                                      <option value="Un-Published">Un-Published</option>                                       
+                </select>				 
+			</div>
+				<div id="file-uploader">		
+					<noscript>			
+						<p>Please enable JavaScript to use file uploader.</p>
+						<!-- or put a simple form for upload here -->
+					</noscript>         
+		       </div>      
+              <div>
+                  <input type="submit" name="Submit" value="   Next   " class="fb_button">  
+			</div>
+</form>
+</div>
+        
+<!-- media image -->     
+
+<div class="media_image" style="display: none;" >
+<form name="user" action="#" method="post" class="customForm">
+		
+              <div>
+				<label for="name">Select Sourse</label>
+				<select name="type" id="type" onchange="changeaction(this.value)" class="formfield">                                      
+                       <option value="Published">From Url</option>
+                       <option value="Un-Published">Select System Logo</option> 
+                       <option value="Un-Published">Uploade from PC</option>                                       
+                </select>				 
+			</div>
+			
+             
+             <div>
+				<label for="name">Thubmle Image</label>
+				  <input name="username" class="formfield" type="text" id="username" onchange="checkuser(this.value);">
+                  <input name="status" type="hidden" value="NO" id="status"> 
+				<!--   <div class="sucess">You Can Choose this user name  !</b></div>-->
+			</div> 
+			<div id="file-uploader1">		
+					<noscript>			
+						<p>Please enable JavaScript to use file uploader.</p>
+						<!-- or put a simple form for upload here -->
+					</noscript>         
+		       </div>      
+              <div>
+                  <input type="submit" name="Submit" value="   Next   " class="fb_button">  
+			</div>
+</form>
+</div>    
+        
+   <!-- Add forum -->     
+
+<div class="Add_forum "  style="display: none;" >
+<form name="user" action="newregistration.php" method="post" class="customForm">
+		
+            
+            <div>
+				<label for="name">Forum Name</label>
+				  <input name="username" class="formfield" type="text" id="username" onchange="checkuser(this.value);">
+                  <input name="status" type="hidden" value="NO" id="status"> 
+				<!--   <div class="sucess">You Can Choose this user name  !</b></div>-->
+			</div>
+			<div>
+				<label for="pass1">Short Discription</label>
+				 <textarea rows="" cols=""></textarea>				
+			</div>
+			
+             <div>
+				<label for="pass1">Discription</label>
+				 <textarea rows="" cols=""></textarea>				
+			</div>
+			  <div>
+				<label for="name">Status</label>
+				<select name="type" id="type" onchange="changeaction(this.value)" class="formfield">                                      
+                         <option value="Disable">Disable</option> 
+                        <option value="Enable">Enable</option> 
+                </select>				 
+			 </div>
+                     
+              <div>
+                  <input type="submit" name="Submit" value="   Next   " class="fb_button">  
+			</div>
+</form>
+</div> 
+     
+     
+ <!-- Add blog -->     
+
+<div class="Add_blog " style="display: none;" >
+<form name="user" action="newregistration.php" method="post" class="customForm">
+		           
+           
+			<div>
+				<label for="pass1">Short Discription</label>
+				 <textarea rows="" cols=""></textarea>				
+			</div>
+			
+             <div>
+				<label for="pass1">Discription</label>
+				 <textarea rows="" cols=""></textarea>				
+			</div>
+			  <div>
+				<label for="name">Status</label>
+				<select name="type" id="type" onchange="changeaction(this.value)" class="formfield">                                      
+                         <option value="Disable">Disable</option> 
+                        <option value="Enable">Enable</option> 
+                </select>				 
+			 </div>
+                     
+              <div>
+                  <input type="submit" name="Submit" value="   Next   " class="fb_button">  
+			</div>
+</form>
+</div> 
+     
+       
+     
+ <!-- Add Question bank -->     
+
+<div class="add_question_bank" style="display: none;" >
+<form name="user" action="newregistration.php" method="post" class="customForm">
+		           
+           
+			<div>
+				<label for="pass1">Short Discription</label>
+				 <textarea rows="" cols=""></textarea>				
+			</div> 
+			  <div>
+				<label for="name">Status</label>
+				<select name="type" id="type" onchange="changeaction(this.value)" class="formfield">                                      
+                         <option value="Disable">Disable</option> 
+                        <option value="Enable">Enable</option> 
+                </select>				 
+			 </div>
+                     
+              <div>
+                  <input type="submit" name="Submit" value="   Next   " class="fb_button">  
+			</div>
+</form>
+</div>
+
+
+<!-- discription -->
+
+<div class="view_course"  style="display: none;">
+<div class="resourse_center" >
+	<div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/bigpdf_1.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div>
+	<div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/file_icon/word.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div>
+	<div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/BigFlv_1.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div>
+	<div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/file_icon/swf.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div>
+	<div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/file_icon/xl.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div><div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/file_icon/ppt.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div><div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/bigpdf_1.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div><div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/bigpdf_1.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div><div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/bigpdf_1.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div><div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/bigpdf_1.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div>
+	<div class="tab">	 
+	<div class="tab_img"><img src="/AktelEducationZend/public/images/icon/bigpdf_1.png" ></div>
+	<div class="text"><a href="">Resourse 1</a></div>	
+	</div>
+</div>
+ 
+<div class="course_discription"> sasasasasasasas </div>
+
+</div>   
+  
+<script>       
+<?php $x=rand(); ?>
+        function createUploader(){            
+            var uploader = new qq.FileUploader({
+                element: document.getElementById('file-uploader1'),
+                action: '<?php echo $this->baseUrl();?>/utility/uploder/uploader.php',
+                params: {  folder: '<?php echo "course/".$x; ?>'},
+                debug: true
+            });           
+        }
+        
+        // in your app create uploader as soon as the DOM is ready
+        // don't wait for the window to load  
+        window.onload = createUploader;     
+</script>  
+<div class="course_head"><a href="#">+ Course name: Hindi</a></div>
+ 
+      
